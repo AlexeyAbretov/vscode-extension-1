@@ -1,0 +1,24 @@
+import { connect } from 'react-redux';
+
+import {
+  getProps
+} from '../../selectors/${name_lower}';
+
+import {
+  ${name}
+} from '../../components';
+
+import {
+  actions
+} from '../../symbiotes';
+
+const mapStateToProps = state => ({
+  ...getProps(state)
+});
+
+export default connect(
+  mapStateToProps,
+  dispatch => ({
+    <callback>: () => dispatch(actions.<action>.start())
+  })
+)(${name});
